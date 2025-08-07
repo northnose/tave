@@ -218,9 +218,13 @@
     }
 
     .btn-group button.btn.btn-default,
-    .btn.btn-default.new-btn,
+    .btn.btn-default.btn-small.new-btn,
+    .btn.btn-default.btn-sm.new-btn,
+    .btn.btn-default.new-quote-btn,
+    .btn.btn-default.new-order-btn,
     .btn.btn-default.add-contact,
     .btn.btn-default.quick-edit,
+    input[type=submit].btn.btn-default,
     #AddNote.btn.btn-default {
         --btn-default-color: white;
         --btn-default-bg: var(--green-dark);
