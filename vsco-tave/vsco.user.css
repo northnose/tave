@@ -1,0 +1,56 @@
+/* ==UserStyle==
+@name           vsco-tave
+@namespace      github.com/northnose/tave
+@version        0.0.1
+@description    Changes some of the workspace.vsco.co styling back to the old tave.app.
+@author         northnose
+==/UserStyle== */
+
+@-moz-document domain("workspace.vsco.co") {
+    body {
+        --danger: #ea6153;
+        --green-dark: #19b698;
+        --info: #3498db;
+        --primary: #6749a7;
+        --text-muted: #777;
+    }
+    
+    :root {
+        color: var(--text-muted);
+    }
+    
+    /* /jobs/view/* -> "Edit Job Worksheet" */
+    .btn.btn-primary {
+        background-color: var(--primary);
+    }
+
+    /* /jobs/view/* -> "Create or Add" */
+    button.btn.btn-default,
+    /* /jobs/view/* -> Contacts section -> "Add Contact" */
+    .btn.btn-default.btn-sm, 
+    /* "New Booked Job" in Sidebar -> Jobs */
+    .cl-vnavigation ul li a.btn.btn-default.btn-xs {
+        color: white;
+        background-color: var(--green-dark);
+    }
+
+    /* overdue task label */
+    .label-danger {
+        background-color: var(--danger);
+    }
+
+    /* job tab number without overdue stuff */
+    .label-default {
+        background-color: #a1a1a1;
+    }
+
+    /* "Clicked" eamail label */
+    .label.label-primary {
+        background-color: var(--primary);
+    }
+
+    /* "Opened" email label */
+    .label.label-info {
+        background-color: var(--info);
+    }
+}
