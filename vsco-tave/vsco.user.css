@@ -235,4 +235,17 @@
         color: white;
         --btn-default-bg: var(--green-dark);
     }
+    
+    #AppContent {
+        font-weight: 400;
+    }
+    
+    #PageContainer b {
+        font-weight: 600;
+    }
+    
+    /* Leads & Jobs list */
+    #PageContainer .primary-link {
+        font-weight: 500;
+    }
 }
