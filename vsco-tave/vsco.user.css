@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           vsco-tave
 @namespace      github.com/northnose/tave
-@version        0.0.1
+@version        0.0.2
 @description    Changes some of the workspace.vsco.co styling back to the old tave.app.
 @author         northnose
 ==/UserStyle== */
@@ -13,25 +13,20 @@
         --info: #3498db;
         --primary: #6749a7;
         --text-muted: #777;
-    }
-    
-    :root {
-        color: var(--text-muted);
-    }
-    
-    /* /jobs/view/* -> "Edit Job Worksheet" */
-    .btn.btn-primary {
-        background-color: var(--primary);
+
+        --btn-primary-bg: var(--primary);
     }
 
-    /* /jobs/view/* -> "Create or Add" */
-    button.btn.btn-default,
-    /* /jobs/view/* -> Contacts section -> "Add Contact" */
-    .btn.btn-default.btn-sm, 
+    .btn-group .btn.btn-default,
+    .btn.btn-default.btn-sm {
+        --btn-default-color: white;
+        --btn-default-bg: var(--green-dark);
+    }
+
     /* "New Booked Job" in Sidebar -> Jobs */
     .cl-vnavigation ul li a.btn.btn-default.btn-xs {
         color: white;
-        background-color: var(--green-dark);
+        --btn-default-bg: var(--green-dark);
     }
 
     /* overdue task label */
@@ -39,7 +34,7 @@
         background-color: var(--danger);
     }
 
-    /* job tab number without overdue stuff */
+    /* job tab number without overdue stuff; I think this color is slightly wrong */
     .label-default {
         background-color: #a1a1a1;
     }
