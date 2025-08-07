@@ -1,51 +1,40 @@
 /* ==UserStyle==
 @name           vsco-tave
 @namespace      github.com/northnose/tave
-@version        0.0.2
+@version        0.0.3
 @description    Changes some of the workspace.vsco.co styling back to the old tave.app.
 @author         northnose
 ==/UserStyle== */
 
 @-moz-document domain("workspace.vsco.co") {
     body {
+        --concrete: #a3b1b2;
         --danger: #ea6153;
         --green-dark: #19b698;
         --info: #3498db;
         --primary: #6749a7;
         --text-muted: #777;
-
+        
         --btn-primary-bg: var(--primary);
     }
+    
+    .btn-delete {
+        color: white;
+        background-color: var(--danger);
+    }
 
-    .btn-group .btn.btn-default,
-    .btn.btn-default.btn-sm {
+    .btn-group button.btn.btn-default,
+    .btn.btn-default.new-btn,
+    .btn.btn-default.add-contact,
+    .btn.btn-default.quick-edit,
+    #AddNote.btn.btn-default {
         --btn-default-color: white;
         --btn-default-bg: var(--green-dark);
     }
-
+    
     /* "New Booked Job" in Sidebar -> Jobs */
     .cl-vnavigation ul li a.btn.btn-default.btn-xs {
         color: white;
         --btn-default-bg: var(--green-dark);
-    }
-
-    /* overdue task label */
-    .label-danger {
-        background-color: var(--danger);
-    }
-
-    /* job tab number without overdue stuff; I think this color is slightly wrong */
-    .label-default {
-        background-color: #a1a1a1;
-    }
-
-    /* "Clicked" eamail label */
-    .label.label-primary {
-        background-color: var(--primary);
-    }
-
-    /* "Opened" email label */
-    .label.label-info {
-        background-color: var(--info);
     }
 }
