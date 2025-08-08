@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           vsco-tave
 @namespace      github.com/northnose/tave
-@version        0.0.5
+@version        0.0.6
 @description    Changes some of the workspace.vsco.co styling back to the old tave.app.
 @author         northnose
 ==/UserStyle== */
@@ -225,7 +225,8 @@
     .btn.btn-default.add-contact,
     .btn.btn-default.quick-edit,
     input[type=submit].btn.btn-default,
-    #AddNote.btn.btn-default {
+    #AddNote.btn.btn-default,
+    #ComposeButtonContainer .btn.btn-default {
         --btn-default-color: white;
         --btn-default-bg: var(--green-dark);
     }
@@ -236,11 +237,11 @@
         --btn-default-bg: var(--green-dark);
     }
     
-    #AppContent {
+    #AppContent, p {
         font-weight: 400;
     }
     
-    #PageContainer b {
+    b {
         font-weight: 600;
     }
     
