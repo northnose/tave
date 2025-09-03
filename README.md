@@ -15,3 +15,12 @@ Here is a screenshot from August 7, 2025:
 
 1. Install the [Stylus](https://github.com/openstyles/stylus) extension for your browser.
 2. Install this style from https://userstyles.world/style/23582/vsco-tave. 
+
+## tampermonkey
+
+Currently there's just one script here. It adds a "Purge" button to the job/lead page if and only if it is in the "lead" (i.e. not booked, fulfillment, or completed) stage. This is to reduce the amount of clicking required to purge spam leads.
+
+### Installation
+
+1. Install the [Tampermonkey](https://www.tampermonkey.net/) extension for your browser.
+2. Copy/paste the script into Tampermonkey.
