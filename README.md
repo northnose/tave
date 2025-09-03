@@ -18,6 +18,8 @@ Here is a screenshot from August 7, 2025:
 
 ## tampermonkey
 
+![screenshot of job-purge-link](tampermonkey/job-purge-link-screenshot.png)
+
 Currently there's just one script here. It adds a "Purge" button to the job/lead page if and only if it is in the "lead" (i.e. not booked, fulfillment, or completed) stage. This is to reduce the amount of clicking required to purge spam leads.
 
 Unlike the theme/style modification above, this runs actual code and could potentially cause harm if there is a bug or if VSCO changes something about the page structure. Since there is a purge confirmation screen though, a destructive bug is unlikely.
