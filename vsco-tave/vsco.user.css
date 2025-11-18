@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           vsco-tave
 @namespace      github.com/northnose/tave
-@version        0.0.8
+@version        0.0.9
 @description    Changes some of the workspace.vsco.co styling back to the old tave.app.
 @author         northnose
 ==/UserStyle== */
@@ -51,28 +51,6 @@
         --default-font-weight: 400;
         --dots-future-bg: #eee;
         --dropdown-bg: #fff;
-        --fa-font-duotone: normal 900 1em/1 "Font Awesome 6 Duotone";
-        --fa-font-duotone-light: normal 300 1em/1 "Font Awesome 6 Duotone";
-        --fa-font-duotone-regular: normal 400 1em/1 "Font Awesome 6 Duotone";
-        --fa-font-duotone-thin: normal 100 1em/1 "Font Awesome 6 Duotone";
-        --fa-font-light: normal 300 1em/1 "Font Awesome 6 Pro";
-        --fa-font-regular: normal 400 1em/1 "Font Awesome 6 Pro";
-        --fa-font-sharp-duotone-light: normal 300 1em/1 "Font Awesome 6 Sharp Duotone";
-        --fa-font-sharp-duotone-regular: normal 400 1em/1 "Font Awesome 6 Sharp Duotone";
-        --fa-font-sharp-duotone-solid: normal 900 1em/1 "Font Awesome 6 Sharp Duotone";
-        --fa-font-sharp-duotone-thin: normal 100 1em/1 "Font Awesome 6 Sharp Duotone";
-        --fa-font-sharp-light: normal 300 1em/1 "Font Awesome 6 Sharp";
-        --fa-font-sharp-regular: normal 400 1em/1 "Font Awesome 6 Sharp";
-        --fa-font-sharp-solid: normal 900 1em/1 "Font Awesome 6 Sharp";
-        --fa-font-sharp-thin: normal 100 1em/1 "Font Awesome 6 Sharp";
-        --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Pro";
-        --fa-font-thin: normal 100 1em/1 "Font Awesome 6 Pro";
-        --fa-style-family-classic: "Font Awesome 6 Pro";
-        --fa-style-family-duotone: "Font Awesome 6 Duotone";
-        --fa-style-family-sharp: "Font Awesome 6 Sharp";
-        --fa-style-family-sharp-duotone: "Font Awesome 6 Sharp Duotone";
-        --font-family-monospace: "Inconsolata";
-        --font-family-sans-serif: "Source Sans 3";
         --gray: #555;
         --gray-100: #f5f5f5;
         --gray-200: #eee;
@@ -115,7 +93,6 @@
         --modal-backdrop-bg: #f0f0f0cc;
         --modal-bg: #fff;
         --modal-sidebar: #f4f8fb;
-        --monospace-font: "Inconsolata";
         --monospace-font-weight: 400;
         --navy: #0c648e;
         --orange: #ff9b3d;
@@ -221,17 +198,18 @@
         background-color: var(--danger);
     }
 
-    .btn-group button.btn.btn-default,
     .btn.btn-default.btn-small.new-btn,
     .btn.btn-default.btn-sm.new-btn,
     .btn.btn-default.new-quote-btn,
     .btn.btn-default.new-order-btn,
+    .new-job-btn .btn.btn-default,
     .btn.btn-default.add-contact,
     .btn.btn-default.quick-edit,
     input[type=submit].btn.btn-default,
     #AddNote.btn.btn-default,
     #ComposeButtonContainer .btn.btn-default,
-    #NewQuestionnaireInvitation.btn.btn-default {
+    #NewQuestionnaireInvitation.btn.btn-default,
+    #AppContent .page-header > a {
         --btn-default-color: white;
         --btn-default-bg: var(--green-dark);
     }
@@ -242,7 +220,8 @@
         --btn-default-bg: var(--green-dark);
     }
     
-    #AppContent, p {
+    #AppContent, p,
+    #PageContainer .tab-has-content a {
         font-weight: 400;
     }
     
